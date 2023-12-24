@@ -1,0 +1,646 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: gilroy;
+    background-color: #F6F4EF;
+}
+#nav
+{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    /* position: fixed; */
+}
+
+.nav-left img
+{
+    height: 40px;
+}
+
+.nav-right a
+{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-size: 20px;
+}
+#nav a::after
+{
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 0%;
+    background-color: #000000;
+    bottom: -5px;
+    left: 0;
+    transition: all ease 0.5s;
+}
+#nav a:hover::after
+{ width: 100%;
+    background-color: red;
+}
+#nav a:hover
+{
+    color: red;
+}
+.page1
+{
+    height: 100%;
+    width: 100%;
+   
+}
+.main
+{
+    height: 88%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content
+{
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    /* background-color: red; */
+    /* background:radial-gradient(rgb(88, 88, 199),#F6F4EF,#F6F4EF); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#content h1
+{
+    font-size: 8vw;
+    text-align: center;
+    font-weight: 500;
+   
+}
+#content h1 span
+{
+    color: #4540DB;
+    text-shadow: 1px 1px 10px #4540DB;
+    /* display: block; */
+   /* box-shadow: #4540DB; */
+    
+}
+#content p
+{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #7a7a7a;
+    padding-top: 50px;
+}
+#links 
+{  
+    margin-top: 80px;
+   display: flex;
+   gap: 60px;
+  
+}
+#links a
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    
+}
+#links a::after
+{
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 20%;
+    background-color: #000000;
+    bottom: -5px;
+    left: 0;
+    transition: all ease 0.5s;
+}
+#links a:hover::after
+{ width: 100%;
+  background-color: red;
+}
+#links a:hover
+{
+    color: red;
+}
+.page2
+{
+    height: 100%;
+    width: 100%; 
+    display: inline-block;
+    align-items: center;
+   justify-content: space-between;
+}
+.page2 .box
+{
+    height: 450px;
+    width: 380px;
+    /* background-color: black; */
+    position: relative;
+    overflow: hidden;
+     display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    /* display: inline-block; */
+}
+.page2 .box img
+{
+   
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s;
+    
+}
+ #overflow
+{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    position: relative;
+    top:    20%;
+    transition: all ease 1s;
+    
+}
+.box:hover #overflow
+{
+    top: -8%;
+}
+.box img:hover{
+  height: 90%;
+}
+#overflow h3
+{
+    font-size: 35px;
+    font-weight: 500;
+}
+#overflow h4
+{
+    font-size: 17px;
+    font-weight: 300;
+    padding-top: 18px;
+}
+#overflow i
+{
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: #080808;
+}
+#overflow #ar
+{
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: 500;
+}
+.page3 
+{
+  /* height: 100%;
+  width: 100%; */
+    text-align: center;
+    margin-top: 40px;
+}
+.page3 a
+{
+    text-decoration: none;
+   font-size: 20px;
+   position: relative;
+   color: #000000;
+   transition: all ease 0.5s;
+}
+.page3 a::after
+{   content: "";
+    height: 3px;
+    width: 20%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transition: all ease 0.5s;
+}
+.page3 a:hover::after
+{
+    background-color: red;
+    width: 100%;
+}
+.page3 a:hover
+{
+    color: red;
+}
+.page3 h1
+{
+    font-size: 4vw;
+    font-weight: 400;
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+.page3 h3 a{
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 40px;
+    
+}
+.page3 #branding
+{
+    color: red;
+}
+.page3 h3 a::after
+{   content: "";
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transition: all ease 0.5s;
+}
+
+.page3 i{
+    font-size: 13px;
+  color: rgb(193, 190, 190);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: -10px;
+}
+.page3 p{
+    font-size: 25px;
+    padding-top: 100px;
+    font-weight: 300;
+    line-height: 40px;
+    padding-bottom: 80px;
+}
+.page3 img
+{
+    
+    border: 1px solid black;
+    width: 1200px;
+    aspect-ratio: auto 1200 / 350;
+    height: 350px;
+}
+.page4
+{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+.page4 a
+{
+    font-size: 22px;
+     text-decoration: none;
+     /* padding-left: 70px; */
+     color: black;
+     position: relative;
+     margin-left: 100px;
+     transition: all ease 0.5s;
+}
+.page4 a::after
+{
+    content: "";
+    height: 3px;
+    width: 20%;
+    position: absolute;
+   left: 0;
+    bottom: -5px;
+    background-color: red;
+    transition: all ease 0.5s;
+}
+.page4 a:hover::after
+{
+    width: 100%;
+    
+}
+.page4 a:hover
+{
+    color: red;
+    
+}
+.page4 h1{
+    font-size: 4vw;
+    font-weight: 500;
+    padding-top: 120px;
+}
+.page5{
+    height: 140%;
+    width: 100%;
+    overflow: hidden;
+}
+.page5 .container
+{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 35px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    padding-top: 40px;
+    border-bottom: 2px solid black;
+    /* border-top: 1px solid black; */
+}
+.page5 .container:hover
+{
+    border: 1px solid black;
+}
+.container h1
+{
+    font-weight: 500;
+    padding-bottom: 20px;
+    
+}
+.container h3
+{   
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    
+}
+.container p
+{
+    font-weight: 500;
+    padding-top: 20px;
+    
+}
+.page6
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    text-align: center;
+   
+}
+.page6 h1
+{
+    font-size: 5vw;
+    font-weight: 500;
+    display: inline-block;
+}
+#top
+{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+}
+#bottom
+{
+    height: 88%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ #left
+{
+    display: inline-block;
+    height: 600px;
+    width: 388px;    
+    background-color: rgb(21, 19, 19);
+    position: relative;
+    overflow: hidden;
+}
+#left img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overly
+{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: -16%;
+    background-color: rgb(255, 255, 255);
+    transition: all ease 0.5s;
+
+}
+.overly h3{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.overly i
+{
+    position: absolute;
+    top:  25px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 100;
+}
+#left:hover .overly
+{
+bottom: 0;
+}
+#right
+{
+    display: inline-block;
+    height: 80%;
+    width: 68%;    
+    /* background-color: red; */
+    padding: 70px 30px;
+    text-align: left;
+    position: relative;
+}
+#right p
+{
+  font-size: 32px;
+  font-weight: 400;
+}
+#right img
+{   
+    
+    padding: 70px 40px;
+}
+#right h4
+{
+   position: absolute;
+   top: 70%;
+   left: 23%;
+   font-size: 30px;
+   font-weight: 500;
+}
+#right h6
+{
+   position: absolute;
+   top: 77%;
+   left: 23%;
+   font-size: 22px;
+   font-weight: 500;
+}
+.page7
+{
+    height: 80%;
+    width: 100%;
+     /* background-color: black; */
+
+     text-align: center;
+}
+.page7 h3{
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 130px;
+    color: #7a7a7a;
+}
+.page7 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px;
+    color: #000000;
+}
+.page7 a{
+    font-size: 7vw;
+    font-weight: 400;
+    text-align: center;
+    /* padding-top: 20px; */
+    color: #0342ff;
+    position: relative;
+    text-decoration: none;
+}
+.page7 a::after
+{
+    content: "";
+    height: 5px;
+    width: 0%;
+    position: absolute;
+   left: 0;
+    bottom: -5px;
+    background-color: rgb(4, 17, 252);
+    transition: all ease 0.5s;
+}
+.page7 a:hover::after
+{
+    width: 100%;
+    
+}
+.end
+{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    padding-top: 60px;
+}
+
+
+.end h1 a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    color: #000000;
+    position: relative;
+    
+}
+.end a::after
+{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+   left: 0;
+    bottom: -5px;
+    background-color: rgb(252, 4, 4);
+    transition: all ease 0.5s;
+}
+.end a:hover::after
+{
+    width: 100%;
+    
+}
+.end a:hover
+{
+    color: red;
+}
+
+.one
+{
+    height: 80%;
+    width: 20%;
+    /* background-color: rgb(106, 84, 84); */
+    padding: 60px 40px;
+    border-bottom: 1px solid black;
+}.two
+{
+    height: 80%;
+    width: 20%;
+    border-bottom: 1px solid black;
+    /* background-color: rgb(132, 69, 69); */
+}.three
+{
+    border-bottom: 1px solid black;
+    height: 80%;
+    width: 20%;
+    /* background-color: rgb(33, 79, 84); */
+}.four
+{
+    height: 80%;
+    width: 20%;
+        border-bottom: 1px solid black;
+    /* background-color: rgb(196, 175, 175); */
+    
+}.five
+{
+    height: 80%;
+    width: 20%;
+     /* background-color: rgb(50, 60, 122); */
+     border-bottom: 1px solid black;
+     border-bottom: 1px solid black;
+}.five img
+{
+    height: 50px;
+    margin-top: 30px;
+}
+.five #img1
+{
+    height: 40px;
+    padding-right: 10px;
+}
+.five #img2
+{
+    height: 40px;
+}
+
+.footer
+{   height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7a7a7a;
+  
+}
+.footer h4
+{
+    font-size: 17px;
+}
+.footer #footer-right
+{
+    display: flex;
+    gap: 20px;
+}
